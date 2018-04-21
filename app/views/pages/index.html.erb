@@ -1,0 +1,26 @@
+<body>
+    <style>
+    #msg {
+        width: 100%;
+        padding: 50px 0;
+        text-align: center;
+        display: none;
+    }
+    </style>
+  <div class="container">
+      <div class="row"><button onclick="hiddenMsg()" type="button" class="btn btn-primary">Click Here</button></div>
+      <div class="msg" id="msg">Hello!</div>
+  </div>
+  <footer>
+      <script>
+        function hiddenMsg() {
+            var x = document.getElementById("msg");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+      </script>
+  </footer>
+</body>
