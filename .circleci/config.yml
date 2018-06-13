@@ -1,8 +1,7 @@
 version: 2
 jobs:
   build:
-    machine:
-      image: circleci/classic:latest
+    machine: true
       environment:
         http_proxy: lalala
         https_proxy: blablahblah
